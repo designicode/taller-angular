@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SkeletonComponent } from '@layout/skeleton/skeleton.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,7 @@ const routes: Routes = [
   },
   {
     path: 'panel',
+    component: SkeletonComponent,
     loadChildren: () => 
       import('@modules/panel/panel.module').then(
         m => m.PanelModule

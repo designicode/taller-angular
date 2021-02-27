@@ -1,1 +1,8 @@
-tabla de usuarios
+<h1>
+    Tabla de usuarios
+</h1>
+<button (click)="modal.showModal()">Nuevo usuario</button>
+<app-main-modal [title]="'Nuevo usuario'" #modal>
+    Este es mi contenido
+    <button  (click)="modal.hideModal()">Cancelar</button>
+</app-main-modal>

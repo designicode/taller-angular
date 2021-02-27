@@ -1,0 +1,36 @@
+.mcontainer {
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    position: fixed;
+    z-index: 999999;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .mmodal{
+        width: 350px;
+        background: #fff;
+        padding: 16px;
+        border-radius: 4px;
+        &-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.3);
+            > i {
+                font-size: 18px;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.85;
+                }
+            }
+        }
+    }
+
+}

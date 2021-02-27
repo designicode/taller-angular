@@ -1,0 +1,13 @@
+<ng-container *ngIf="isShow">
+    <div class="mcontainer">
+        <div class="mmodal">
+            <div class="mmodal-header">
+                {{title}}
+                <i class="fas fa-times" (click)="isShow = false"></i>
+            </div>
+            <div class="mmodal-content">
+                <ng-content></ng-content>
+            </div>
+        </div>
+    </div>
+</ng-container>

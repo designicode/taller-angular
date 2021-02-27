@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { IMenu } from './imenu.metadata';
 import { MENU } from './menu.const';
 
@@ -7,11 +7,7 @@ import { MENU } from './menu.const';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent {
   public menu: IMenu[] = MENU;
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  @Output() onClick = new EventEmitter();
 }

@@ -1,6 +1,6 @@
-<div class="skeleton">
-    <header app-navigation></header>
-    <nav app-sidebar></nav>
+<div class="skeleton" [ngClass]="{'collapse': !showMenu}">
+    <header app-navigation (onClick)="showMenu = !showMenu"></header>
+    <nav app-sidebar (onClick)="showMenu = !showMenu"></nav>
     <main>
         <router-outlet></router-outlet>
     </main>

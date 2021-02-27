@@ -5,11 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './skeleton.component.html',
   styleUrls: ['./skeleton.component.scss']
 })
-export class SkeletonComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class SkeletonComponent {
+  public showMenu = true;
 
 }

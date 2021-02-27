@@ -1,0 +1,4 @@
+export enum PERMISSIONS_ENUM {
+    READ_USER = 'READ_USER',
+    UPDATE_USER = 'UPDATE_USER'
+}
